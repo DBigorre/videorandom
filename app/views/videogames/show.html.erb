@@ -1,0 +1,7 @@
+<h2><%= @videogame.nom %></h2>
+<p><%= @videogame.plateforme %></p>
+<% if @videogame.termine %>
+  <p><%= "Jeu terminé" %></p>
+<% else %>
+  <p><%= "Ce jeu n'est pas terminé" %></p>
+<% end %>

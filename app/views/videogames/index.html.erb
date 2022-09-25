@@ -1,7 +1,11 @@
 <ul>
   <% @videogames.each do |videogame| %>
-    <li><%= videogame.name %></li>
+    <li><%= videogame.nom %></li>
     <li><%= videogame.plateforme %></li>
-    <li><%= videogame.termine %></li>
+    <% if videogame.termine %>
+      <li><%= "Jeu terminé" %></li>
+    <% else %>
+      <li><%= "Ce jeu n'est pas terminé" %></li>
+    <% end %>
   <% end %>
 </ul>

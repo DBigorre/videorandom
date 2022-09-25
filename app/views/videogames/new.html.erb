@@ -1,0 +1,9 @@
+<%= form_with model: @videogame do |f| %>
+  <%= f.label :nom %>
+  <%= f.text_field :nom %>
+  <%= f.label :plateforme %>
+  <%= f.text_field :plateforme %>
+  <%= f.label :termine %>
+  <%#= f.number_field :rating %>
+  <%= f.submit %>
+<% end %>

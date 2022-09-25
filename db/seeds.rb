@@ -11,7 +11,7 @@ Videogame.destroy_all
 
 puts "creating new word of play"
 
-videogame1 = Videogame.create!(nom: "Skyrim", plateforme:"playstation 4", termine: false)
+Videogame.create!(nom: "Skyrim", plateforme: "Playstation 4", termine: false)
 
 
 puts "Finish!!! Play again?"
